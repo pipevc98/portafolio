@@ -1,0 +1,66 @@
+<mat-sidenav-container fullscreen>
+    <mat-sidenav #sidenav mode="push" [ngStyle]="{width: '250px'}">
+
+        <mat-toolbar>
+            <span>Menú</span>
+            <span class="spacer"></span>
+            <!-- boton para cerrar el sidenav -->
+            <button mat-icon-button (click)="sidenav.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </mat-toolbar>
+
+        <mat-nav-list>
+            <mat-list-item 
+            *ngFor="let item of sidebarItems" 
+            [routerLink]="item.URL"
+            (click)="sidenav.toggle()"> 
+
+                <mat-icon matListItemIcon>{{item.icon}}</mat-icon>
+
+                {{item.label}}
+
+            </mat-list-item>
+        </mat-nav-list>
+
+    </mat-sidenav>
+
+
+    <mat-toolbar color="primary">
+        <!-- boton para abrir el side nav -->
+        <button mat-icon-button (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <!-- espacio entre  el boton menu y el logout -->
+        <span class="spacer"></span>
+        
+        
+           <h3 [routerLink]="" >FelipeCeballos</h3>
+       
+
+        <span class="spacer"></span>
+
+        <button mat-button (click)="hireMeSubmit()">
+            <mat-icon >mode_comment</mat-icon>
+            HIRE <strong>ME</strong>
+        </button>
+        
+
+        <!-- Boton logout -->
+        <!-- <button mat-button>
+            <a href=""></a>
+        </button>
+ -->
+
+    </mat-toolbar>
+
+    <div class="container p-2">
+
+        <router-outlet></router-outlet>
+        
+    </div>
+    
+    
+</mat-sidenav-container>
+
+

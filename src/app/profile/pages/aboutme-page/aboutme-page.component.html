@@ -1,0 +1,68 @@
+
+<div  class="grid p-2">
+
+    <mat-card class="col-12 sm:col-6">
+            
+        
+        
+        
+        
+        <mat-card-header align="center">
+            <mat-card-title>Felipe Valdovinos</mat-card-title>
+            <mat-card-subtitle>Front - End Developer</mat-card-subtitle>
+        </mat-card-header>
+        
+        <mat-card-content align="center" class="mt-4">
+
+            <img mat-card-image class="max-w-20rem lg:max-w-30rem border-round-xs" src="https://media.licdn.com/dms/image/C4E03AQEirs6qPfaqVw/profile-displayphoto-shrink_800_800/0/1639526307280?e=1700092800&v=beta&t=7QAvGRxZO0OgZfxlN9V4rIsWXhvGu1w0hNOuoKnlcEs"  [alt]="">
+        </mat-card-content>
+        
+        
+
+    </mat-card>
+    
+    
+
+    <mat-card class="col-12 sm:col-6">
+
+        <mat-card-header>
+            <mat-card-title>ABOUT ME</mat-card-title>
+        </mat-card-header>
+
+        <mat-card-content>
+        
+            <div class="p-2 mt-8">
+                <div class="grid">
+                    <div class="row">
+                        <p>
+                            Im Felipe, front end developer based in Colima, Mexico. Angular developer whit over a one year of experience in the tech industry, I’ve had the privilege of working on a building scalable web applications  that improve user experience.
+                        </p>
+
+                        <p>
+                            My approach to web development is rooted in continuous learning and collaboration. I believe in the power of technology to make the world a better place, and I'm committed to pushing the boundaries of what's possible in the digital realm.
+                        </p>
+
+                        <p>
+                            Let's connect and explore how we can work together to turn ideas into reality. Feel free to reach out via email at pipevc98.1h@email.com or connect with me on LinkedIn.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </mat-card-content>
+
+        <mat-card-content align="center">
+            <div class="flex flex-auto">
+                <div class="col-4">
+                    <button mat-button *ngFor="let item of appContactMe" class="mt-8">
+                        <a href="{{item.url}}" >
+                            <img mat-card-image class="max-w-3rem max-w-2rem" src="{{item.image}}" alt="{{item.alt}}">
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </mat-card-content>
+
+    </mat-card>
+
+</div>
+
