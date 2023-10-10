@@ -12,11 +12,11 @@ const routes: Routes = [
     path: '',
     component: LayoutPageComponent,
     children: [
-      {path: 'list', component: ListPageComponent},
+      {path: 'home', component: ListPageComponent},
       {path: 'about-me', component: AboutmePageComponent},
       {path: 'resume', component: ResumePageComponent},
       {path: 'my-work', component: WorkPageComponent},
-      {path: '**', redirectTo:  'list'}
+      {path: '**', redirectTo:  'home'}
     ]
   }
 ];

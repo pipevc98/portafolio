@@ -28,21 +28,31 @@
 
     <mat-toolbar color="primary">
         <!-- boton para abrir el side nav -->
-        <button mat-icon-button (click)="sidenav.toggle()">
-            <mat-icon>menu</mat-icon>
+        <button mat-button (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon><span>Menú</span>
         </button>
         <!-- espacio entre  el boton menu y el logout -->
         <span class="spacer"></span>
         
+        <a class="flex gap-1" routerLink="/profile/home">
+
+        <div class="flex-row">
+            <img src="../../../../assets/logoFinal.png" class="max-w-3rem" alt="Logo">
+        </div>
         
-           <h3 [routerLink]="" >FelipeCeballos</h3>
-       
+        <div class="flex-row hidden md:block">
+            <h5>Felipe<strong>Ceballos</strong></h5>   
+        </div>
+        </a>
+        
 
         <span class="spacer"></span>
 
-        <button mat-button (click)="hireMeSubmit()">
-            <mat-icon >mode_comment</mat-icon>
-            HIRE <strong>ME</strong>
+        <button mat-button >
+            <a href="mailto:pipevc98@gmail.com?subject=Desarrollo Web&body=Hola, estoy interesado en contactarme contigo">
+                <mat-icon >mode_comment</mat-icon>
+                HIRE <strong>ME</strong>
+            </a>
         </button>
         
 
@@ -57,10 +67,11 @@
     <div class="container p-2">
 
         <router-outlet></router-outlet>
-        
+
     </div>
-    
-    
+     
 </mat-sidenav-container>
+
+
 
 

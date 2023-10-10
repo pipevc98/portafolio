@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { expirence } from '../../interface/expirence.interface';
+import { Expirence } from '../../interface/expirence.interface';
 
 @Component({
   selector: 'app-card-component',
@@ -10,10 +10,12 @@ import { expirence } from '../../interface/expirence.interface';
 export class CardComponentComponent implements OnInit {
 
   @Input()
-  public expirence!: expirence;
+  public expirence!: Expirence;
 
   ngOnInit(): void {
     if(!this.expirence) throw Error('Expirence property is required');
   }
+  
+  
   
 }

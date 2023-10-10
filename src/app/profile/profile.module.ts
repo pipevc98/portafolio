@@ -9,6 +9,7 @@ import { CardComponentComponent } from './components/card-component/card-compone
 import { AboutmePageComponent } from './pages/aboutme-page/aboutme-page.component';
 import { WorkPageComponent } from './pages/work-page/work-page.component';
 import { ResumePageComponent } from './pages/resume-page/resume-page.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -28,7 +29,8 @@ import { ResumePageComponent } from './pages/resume-page/resume-page.component';
   imports: [
     CommonModule,
     ProfileRoutingModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ]
 })
 export class ProfileModule { }

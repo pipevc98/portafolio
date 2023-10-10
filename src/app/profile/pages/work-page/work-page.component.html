@@ -1,7 +1,48 @@
-<div class=" section">
-    <div class="container"> 
+
+<div class="grid p-2 mt-2">
+    <span class="spacer"></span>
+    <h1><strong>My Work</strong></h1>
+    <span class="spacer"></span>
+</div>
 
 
+<mat-divider></mat-divider>
+
+
+
+<div class="grid  p-4 mt-2">
+    <div class="col-12  md:col-4" *ngFor="let item of works">
         
+        <div *ngFor="let item of works"></div>
+
+        <mat-card >
+            <mat-card-header>
+                <mat-card-title>
+                    <a href="https://misaddendas.com/">{{item.nameCompany}}</a>
+                </mat-card-title>
+                <mat-card-subtitle>{{item.puesto}}</mat-card-subtitle>
+            </mat-card-header>
+            
+            <div class="mat-card-image flex" >
+        
+                <div class="flex-grow-1 flex align-items-center justify-content-center ">
+                    <img matCardImage class="max-w-15rem" src="{{item.altImage}}" alt="{{item.nameCompany}}">
+                </div>
+                
+            </div>
+
+                
+
+            <mat-card-content class="mt-4 text-justify">
+                <p>{{item.initDate}} - {{item.endDate}}</p>
+            </mat-card-content>
+
+            <mat-card-content class="mt-4">
+                {{item.desc}}
+            </mat-card-content>
+        </mat-card>
+
     </div>
 </div>
+
+

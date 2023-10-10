@@ -1,0 +1,77 @@
+
+<div>
+    <div class="flex align-content-center align-items-center justify-content-center mt-3">
+        <h2> Agregar Información </h2>
+    </div>
+    
+    <div class="grid p-2  md:ml-2 md:mr-2">
+    
+        <div class="col-12 md:col-6">
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>Agregar Experiencia</mat-card-title>
+                </mat-card-header>
+    
+                <mat-card-content class="mt-2">
+                    <form [formGroup]="expirenceForm" autocomplete="off" (ngSubmit)="onSubmit()">
+                        <div class="grid">
+                            <div class="col-12">
+                                <mat-form-field class="input-full-width">
+                                    <mat-label>Nombre del proyecto o empresa</mat-label>
+                                    <input type="text" matInput placeholder="Ejemplo: Google" required formControlName="nameCompany">
+                                </mat-form-field>
+                            </div>
+                            <div class="col-12">
+                                <mat-form-field class="input-full-width">
+                                    <mat-label>Puesto</mat-label>
+                                    <input type="text" matInput placeholder="Ejemplo: FullStack" required formControlName="puesto">
+                                </mat-form-field>
+                            </div>
+                            
+                            <div class="col-6">
+                                <mat-form-field class="input-full-width">
+                                    <mat-label>Desde</mat-label>
+                                    <input type="text" matInput placeholder="2023" required formControlName="initDate">
+                                </mat-form-field>
+                            </div>
+                
+                            <div class="col-6">
+                                <mat-form-field class="input-full-width">
+                                    <mat-label>Hasta</mat-label>
+                                    <input type="text" matInput placeholder="2023" required formControlName="endDate">
+                                </mat-form-field>
+                            </div>
+
+                            <div class="col-12">
+                                <mat-form-field class="input-full-width">
+                                    <mat-label>Imagen</mat-label>
+                                    <input type="text" matInput formControlName="altImage">
+                                </mat-form-field>
+                            </div>
+                            <div class="col-12">
+                                <mat-form-field class="input-full-width">
+                                    <mat-label>Descripción:  </mat-label>
+                                    <textarea matInput required formControlName="desc"></textarea>
+                                </mat-form-field>
+                            </div>
+    
+                        </div>
+
+                        <div class="flex">
+                            <button mat-raised-button color="primary" class="input-full-width" type="submit" [disabled]="this.expirenceForm.invalid"> <mat-icon>save</mat-icon> Guardar</button>
+                        </div>
+                    </form>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    
+        <div class="col-12 md:col-6">
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>Agregar información Personal</mat-card-title>
+                </mat-card-header>
+            </mat-card>
+        </div>
+    
+    </div>
+</div>

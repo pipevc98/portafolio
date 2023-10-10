@@ -1,8 +1,8 @@
-export interface expirence {
-    company: string,
+export interface Expirence {
+    nameCompany: string,
     puesto: string,
-    dateComing:    string,
-    dateEnd:    string,
+    initDate:    string,
+    endDate:    string,
     desc:    string,
-    _altImg: string
+    altImage?: string
 }

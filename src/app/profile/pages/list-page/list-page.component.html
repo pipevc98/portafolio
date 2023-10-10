@@ -1,20 +1,31 @@
+<div class="fondoHome">
 
-<div class="grid nested-grid">
-    <div class="col-8 sm:col-12">
-        <div class="grid">
-            <div class="col-12">
-                <div class="bg-primary">
-                   aa
+    <div class="grid">
+
+        <div class="col-12 sm:col-7 mt-4 " align="center">
+            <h1><strong>Felipe Ceballos </strong></h1>
+            <h2>FullStack Developer</h2>
+
+            <img  src="../../../../assets/avatarMe.png" class="max-w-22rem md:max-w-30rem" alt="">
+        </div>
+
+        
+        <div class="col-12 sm:col-5">
+            
+            <h3><strong>Trabajemos Juntos</strong></h3>
+
+            <div class="grid">
+                
+                <div class="col-4 sm:col-12" *ngFor="let item of socialMedia">
+                    <span class="spacer"></span>
+                    <a class="flex gap-2"  href="{{item.url}}">
+                        <img class="max-w-2rem" src="{{item.image}}" alt=""> 
+                        <span class="hidden sm:block">{{item.label}}  </span> 
+                    </a> 
+                    
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="col-4 sm:col-12">
-        <div class="">
-            
-            aa
-        </div>
     </div>
 </div>
- 

@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+    
+    <span class="spacer"></span>
+    <div class="flex flex-row p-2">
+        <img class="max-w-3rem" src="../../../../assets/logoFinal.png" alt="">
+        <h5>Felipe<strong>Ceballos</strong></h5>
+    </div>
+    <span class="spacer"></span>
+
+    <button mat-raised-button (click)="onLogout()" color="warn">Salir</button>
+
+</mat-toolbar>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
