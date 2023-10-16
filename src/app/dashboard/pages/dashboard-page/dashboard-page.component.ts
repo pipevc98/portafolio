@@ -29,6 +29,7 @@ export class DashboardPageComponent {
     endDate: ['', [Validators.required, Validators.maxLength(4)]],
     desc: [ '', [Validators.required, Validators.minLength( 20 ) ]],
     altImage: [''],
+    url: [''],
   })
 
   onSubmit(){
@@ -45,7 +46,7 @@ export class DashboardPageComponent {
     } )
 
     
-    this.expirenceForm.untouched;
+    this.expirenceForm.markAllAsTouched();
 
     this.expirenceForm.reset()
 

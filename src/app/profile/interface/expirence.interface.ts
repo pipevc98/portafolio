@@ -5,4 +5,5 @@ export interface Expirence {
     endDate:    string,
     desc:    string,
     altImage?: string
+    url?: string
 }

@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class ProfieService {
 
-  private readonly baseUrl = 'http://localhost:3000'
+  private readonly baseUrl = 'https://felipceballos.up.railway.app'
 
   constructor(private http: HttpClient) { }
 
@@ -19,3 +19,4 @@ export class ProfieService {
     return this.http.get<Expirence[]>(url);
   }
 }
+

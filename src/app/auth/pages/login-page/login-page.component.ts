@@ -18,8 +18,8 @@ export class LoginPageComponent {
    public hide = true;
 
    loginForm: FormGroup = this.fb.group({
-    email: ['pipevc98.1@gmail.com', [ Validators.required,  Validators.email ]],
-    password: ['FDE19C13ED', [ Validators.required, Validators.minLength( 6 ) ]]
+    email: ['', [ Validators.required,  Validators.email ]],
+    password: ['', [ Validators.required, Validators.minLength( 6 ) ]]
    });
 
    login() {

@@ -10,21 +10,27 @@
         </div>
 
         
-        <div class="col-12 sm:col-5">
+        <div class="grid col-12 sm:col-5 align-content-center">
             
-            <h3><strong>Trabajemos Juntos</strong></h3>
+            <div class="col-12">
 
-            <div class="grid">
-                
-                <div class="col-4 sm:col-12" *ngFor="let item of socialMedia">
-                    <span class="spacer"></span>
-                    <a class="flex gap-2"  href="{{item.url}}">
-                        <img class="max-w-2rem" src="{{item.image}}" alt=""> 
-                        <span class="hidden sm:block">{{item.label}}  </span> 
-                    </a> 
+                <h3 class="block sm:hidden" align="center"><strong>Trabajemos Juntos</strong></h3>
+                <h2 class="hidden sm:block"><strong>Trabajemos Juntos</strong></h2>
+    
+                <div class="grid">
                     
+                    <div class=" col-4 sm:col-12" *ngFor="let item of socialMedia">
+                        <span class="spacer"></span>
+                        <a class="flex justify-content-center sm:justify-content-start sm:gap-2"  href="{{item.url}}">
+                            <img class="max-w-2rem" src="{{item.image}}" alt=""> 
+                            <span class="hidden sm:block">{{item.label}}  </span> 
+                        </a> 
+                        
+                    </div>
                 </div>
             </div>
+
+
         </div>
 
     </div>

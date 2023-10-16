@@ -8,7 +8,7 @@ import { Observable, map } from 'rxjs';
 })
 export class DashboardService {
 
-  private readonly baseUrl : string = 'http://localHost:3000'
+  private readonly baseUrl : string = 'https://felipceballos.up.railway.app'
 
   constructor(private http:  HttpClient) { 
   }

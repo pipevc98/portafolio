@@ -11,7 +11,7 @@ import { checkTokenResponse } from '../interfaces/check-token.response';
 })
 export class AuthService {
 
-  private readonly baseUrl : string = 'http://localHost:3000'
+  private readonly baseUrl : string = 'https://felipceballos.up.railway.app'
   
   private _currentUser = signal<User | null>( null );
   private _authStatus = signal<authStatus>( authStatus.checking ); 
