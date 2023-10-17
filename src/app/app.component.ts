@@ -1,7 +1,8 @@
-import { Component, inject, computed, effect } from '@angular/core';
+import { Component, inject, computed, effect, Inject, PLATFORM_ID } from '@angular/core';
 import { AuthService } from './auth/services/auth.service';
 import { Router } from '@angular/router';
 import { authStatus } from './auth/interfaces/auth-status.enum';
+
 
 @Component({
   selector: 'app-root',
@@ -22,7 +23,6 @@ export class AppComponent {
 
     return true
   });
-
 
   public authStatusChangedEffect = effect( () => {
 

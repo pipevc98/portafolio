@@ -12,7 +12,6 @@ const routes: Routes = [
   },
   {
     path: 'profile',
-    canActivate:[ isNotAuthenticatedGuard ],
     loadChildren: () => import ('./profile/profile.module').then(m => m.ProfileModule),
   },
   {
@@ -40,7 +39,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot( routes, {useHash: true} )],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
