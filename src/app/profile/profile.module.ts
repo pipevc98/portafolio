@@ -10,6 +10,8 @@ import { AboutmePageComponent } from './pages/aboutme-page/aboutme-page.componen
 import { WorkPageComponent } from './pages/work-page/work-page.component';
 import { ResumePageComponent } from './pages/resume-page/resume-page.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MailComponentComponent } from './pages/mail-component/mail-component.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -21,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     CardComponentComponent,
     AboutmePageComponent,
     WorkPageComponent,
-    ResumePageComponent
+    ResumePageComponent,
+    MailComponentComponent
 
 
     
@@ -30,7 +33,8 @@ import { HttpClientModule } from '@angular/common/http';
     CommonModule,
     ProfileRoutingModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ]
 })
 export class ProfileModule { }

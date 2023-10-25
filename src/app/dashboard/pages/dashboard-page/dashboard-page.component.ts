@@ -46,7 +46,7 @@ export class DashboardPageComponent {
     } )
 
     
-    this.expirenceForm.markAllAsTouched();
+    this.expirenceForm.markAsUntouched();
 
     this.expirenceForm.reset()
 
