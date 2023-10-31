@@ -3,16 +3,7 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-.textoEncima {
-    font-weight: 610!important;
-}
 
-.textoDetras {
-    /* font-size: calc(1.95rem + 4.4vw)!important; */
-    color: #dee9ed!important;
-    opacity: .7;
-    font-weight: 610!important;
-}
 
 .transparente {
     opacity: .6;
@@ -38,203 +29,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     text-transform: none;
 }
 
-.info-list {
-    border-bottom: 1px solid #ddd;
-    border-top: 1px solid #ddd;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    margin: 20px 0;
-    overflow: auto;
-}
-
-.block-content {
-    margin: 0 0 70px;
-    overflow: hidden;
-}
-
-.block-title {
-    font-size: 24px;
-    text-transform: uppercase;
-    color: #333;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 30px;
-    font-weight: 600;
-}
 
 
-.progress {
-    height: 2px;
-    margin-bottom: 30px;
-    background-color: #ddd;
-    border-radius: 0;
-    box-shadow: none;
-    overflow: visible;
-    width: 90%;
-}
-
-.progress-bar {
-    height: 2px;
-    line-height: 8px;
-    background-color: #666;
-    box-shadow: none;
-    position: relative;
-}
-
-
-.progress-bar-label span {
-    font-weight: 300;
-}
-
-.icon-list li {
-    padding-left: 25px;
-}
-
-.icon-list li:before {
-    position: absolute;
-    content: '\f3fd';
-    font-family: 'Ionicons';
-    font-size: 24px;
-    left: 20px;
-    color: #666;
-}
-
-.timeline {
-    position: relative;
-}
-
-.timeline:before {
-    background: #ddd;
-    bottom: 0;
-    content: "";
-    left: 18px;
-    position: absolute;
-    top: 50px;
-    width: 1px;
-    height: 75%;
-}
-
-.timeline:after {
-    font-family: 'Ionicons';
-    top: 0;
-    left: -5px;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    text-align: center;
-    color: #ddd;
-    font-size: 36px;
-    line-height: 45px;
-}
-
-.timeline.experience:after {
-    content: '\f356';
-}
-
-.timeline.education:after {
-    content: '\f349';
-}
-
-.exp {
-    padding: 20px 20px 0 80px;
-    position: relative;
-}
-
-.exp:after {
-    background: #FFF;
-    border: 2px solid #ddd;
-    border-radius: 50%;
-    content: "";
-    height: 20px;
-    left: 9px;
-    position: absolute;
-    text-align: center;
-    top: 24px;
-    width: 20px;
-}
-
-.exp-holder {
-    margin-top: 70px;
-}
-
-.exp .hgroup h4,
-.exp .hgroup h5 {
-    display: table-cell;
-    text-transform: none;
-    margin-bottom: 10px;
-}
-
-.exp .hgroup {
-    margin-bottom: 5px;
-}
-
-.exp .hgroup h4 span {
-    color: #666;
-}
-
-.exp .hgroup h5 {
-    font-size: 14px;
-    font-weight: 400;
-    text-align: right;
-    color: #727272;
-    padding-left: 60px;
-    position: relative;
-}
-
-.exp .hgroup h5:before {
-    color: #ddd;
-    content: "/";
-    left: 0;
-    left: 30px;
-    position: absolute;
-}
-
-.exp .hgroup h5 span.current {
-    font-style: italic;
-}
-
-.service {
-    text-align: center;
-    padding-top: 25px;
-}
-
-.service h4 {
-    margin: 10px 0;
-    font-size: 14px;
-}
-
-.service-icon {
-    font-size: 30px;
-    margin-bottom: 10px;
-    color: #666;
-}
-
-.awards {
-    padding: 30px;
-}
-
-.awards img {
-    opacity: 0.7;
-}
-
-.awards:hover img {
-    opacity: 1;
-}
-
-
-
-
-
-
-
-
-
-
-.toolbar1 {
-    background-color: #000; /* Negro */
-    color: #03FA6E; /* Color de texto blanco (opcional) */
-    padding: 10px; /* Espacio interno (ajústalo según tus necesidades) */
-}
 
 
 a {
@@ -270,15 +66,22 @@ a {
   }
 
   .fondoHome {
-    background-image: url('./assets/fondoHome.png');
+    background-image: url('./assets/nueva-bg.png');
     background-size: cover;
     height: 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
   }
 
   .mat-card-image {
     height:11rem;
     min-height: 10rem;
     
+  }
+
+  footer {
+    background-color: black;
+  }
+
+  .fondoOscuro {
+    background-color: rgba(0,0,0,.4);
   }

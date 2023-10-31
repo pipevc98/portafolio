@@ -12,6 +12,8 @@ import { ResumePageComponent } from './pages/resume-page/resume-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MailComponentComponent } from './pages/mail-component/mail-component.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './components/footer/footer.component';
+import { ServicesComponentComponent } from './pages/services-component/services-component.component';
 
 
 
@@ -24,7 +26,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     AboutmePageComponent,
     WorkPageComponent,
     ResumePageComponent,
-    MailComponentComponent
+    MailComponentComponent,
+    FooterComponent,
+    ServicesComponentComponent
 
 
     

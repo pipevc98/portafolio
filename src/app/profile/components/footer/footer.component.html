@@ -1,0 +1,27 @@
+<footer class="container">
+
+    <div class="grid p-4">
+
+        <div class="col-6">
+            <h5 class="text-white">Mis Redes Sociales</h5>
+            <div class="flex gap-4">
+                <div class="flex-row"  *ngFor="let item of socialMedia">
+                    <a  href="{{item.url}}">
+                        <img class="max-w-2rem" src="{{item.image}}" alt=""> 
+                    </a> 
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="flex">
+                <div class="flex-row align-items-center">
+                    <h5 class="text-white">Todos los derechos reservados Felipe Valdovinos ©</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</footer>

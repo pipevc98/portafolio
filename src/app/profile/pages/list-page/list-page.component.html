@@ -1,10 +1,10 @@
-<div class="fondoHome">
+<div class="fondoHome mt-2 shadow-3">
 
-    <div class="grid">
+    <div class="grid fondoOscuro">
 
-        <div class="col-12 sm:col-7 mt-4 " align="center">
-            <h1><strong>Felipe Ceballos </strong></h1>
-            <h2>FullStack Developer</h2>
+        <div class="col-12 sm:col-7 mt-4" align="center">
+            <h1 class="text-white font-semibold text-4xl">Felipe Ceballos</h1>
+            <h2 class="text-white">FullStack Developer</h2>
 
             <img  src="../../../../assets/avatarMe.png" class="max-w-22rem md:max-w-30rem" alt="">
         </div>
@@ -14,30 +14,38 @@
             
             <div class="col-12">
 
-                <h3 class="block sm:hidden" align="center"><strong>Trabajemos Juntos</strong></h3>
-                <h2 class="hidden sm:block"><strong>Trabajemos Juntos</strong></h2>
+                <h2 class="block sm:hidden text-white" align="center"><strong>Trabajemos Juntos</strong></h2>
+                <h2 class="hidden sm:block text-white"><strong>Trabajemos Juntos</strong></h2>
     
                 <div class="grid">
-                    
-                    <div class=" col-4 sm:col-12" *ngFor="let item of socialMedia">
+            
+                    <div class=" col-4 sm:col-12" *ngFor="let item of socialMedia" align="center">
                         <span class="spacer"></span>
                         <a class="flex justify-content-center sm:justify-content-start sm:gap-2"  href="{{item.url}}">
                             <img class="max-w-2rem" src="{{item.image}}" alt=""> 
-                            <span class="hidden sm:block">{{item.label}}  </span> 
+                            <span class="hidden sm:block text-white">{{item.label}}</span> 
                         </a> 
-                        
                     </div>
+
+                    <div class="flex w-full">
+                        <button mat-raised-button color="primary" class="mt-3 w-10 sm:w-6 md:w-4 hidden sm:block" (click)="scrollToComponent()">Contactame</button>
+                    </div>
+        
                 </div>
             </div>
-
-
+            
         </div>
-
+        
+        <div class="flex w-full justify-content-center mb-4 block sm:hidden">
+            <button mat-raised-button color="primary" class="mt-3 w-10 sm:w-6 md:w-4" (click)="scrollToComponent()">Contactame</button>
+        </div>
+        
     </div>
+</div>
 
-    <mat-divider></mat-divider>
+<app-services-component></app-services-component>
 
+<div #emailComponent>
     <app-mail-component></app-mail-component>
-    
 </div>
 

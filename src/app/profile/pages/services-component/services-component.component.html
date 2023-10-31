@@ -1,0 +1,25 @@
+<div class="flex justify-content-center mt-4 p-4">
+    <h3 class="text-4xl font-semibold">Mis Servicios</h3>
+</div>
+
+    <div class="grid m-4">
+        
+        <div class="col-12 sm:col-4" *ngFor="let item of services">
+            
+            <div class="flex justify-content-center">
+                <h4 class="text-xl">{{item.title}}</h4>
+            </div> 
+
+            <div class="flex justify-content-center">
+                <mat-card  class="border-circle w-18rem h-18rem" >
+                    
+                        <div class="flex flex column justify-content-center">
+                            <div class="flex align-content-center flex-wrap fondo" style="min-height: 280px">
+                                <img src="{{item.image}}" alt="" class="w-12rem ">
+                            </div>
+                        </div>
+                </mat-card>
+            </div>
+            <P class="text-center mt-3">{{item.desc}}</P>
+        </div>
+    </div>

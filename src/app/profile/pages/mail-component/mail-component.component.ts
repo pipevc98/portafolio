@@ -9,8 +9,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class MailComponentComponent {
 
+
   constructor(private profileService: ProfieService, private fb: FormBuilder){
-    console.log(this.emailForm);
   }
 
   emailForm: FormGroup = this.fb.group({
@@ -25,7 +25,6 @@ export class MailComponentComponent {
 
     this.emailForm.reset('');
 
-    console.log(this.emailForm);
   }
 
 }
